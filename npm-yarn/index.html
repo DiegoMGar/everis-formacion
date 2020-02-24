@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-state="moveNPMYARNtitle">
+            <h1 id="npmyarntitle">NPM + YARN</h1>
+            <p>
+                <img src="images/yarnvsnpm.png" alt="yarn logo" style="height: 200px; border: 0 !important;">
+            </p>
+        </section>
+        <section>
+            <section>
+                <h1 id="introductiontnpm">NPM ?</h1>
+                <ul>
+                    <li>Gestor de paquetería de Javascript</li>
+                    <li>Npm Inc., Freemium paquetes privados, Copyright</li>
+                    <li>Ecosistema nodejs desde 2009</li>
+                    <li>Constructor de proyectos</li>
+                    <li>Scripter</li>
+                </ul>
+            </section>
+            <section>
+                <h1 id="introductionyarn">YARN ?</h1>
+                <ul>
+                    <li>Yarn 2 - Berry</li>
+                    <li>Licencia BSD</li>
+                    <li>Más rápido, seguro y offline</li>
+                    <li><em>Constructor de proyectos</em></li>
+                    <li><em>Scripter</em></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h1>NPM + YARN</h1>
+            <p>
+                <img src="images/yarnvsnpm.png" alt="yarn logo" style="height: 200px; border: 0 !important;">
+            </p>
+        </section>
+    </div>
+</div>
+
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        hash: true,
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/highlight/highlight.js'},
+            {src: 'plugin/notes/notes.js', async: true}
+        ]
+    });
+    Reveal.addEventListener('moveNPMYARNtitle', function () {
+        const original = document.getElementById('npmyarntitle');
+        const originalText = original.textContent;
+    }, false);
+</script>
+</body>
+</html>
